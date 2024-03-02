@@ -13,7 +13,7 @@ function App() {
 
   const handleSubmit = (event: React.FormEvent)=>{
     event.preventDefault();
-    setItems((prev) => [...prev,{title:inputValue, id: Date.now().toString()}]);
+    setItems((prev) => [...prev,{title:inputValue, id: Date.now().toString(), done: false}]);
     setInputValue("");
   };
 
